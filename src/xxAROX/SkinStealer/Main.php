@@ -1,5 +1,4 @@
 <?php
-/* Copyright (c) 2020 xxAROX. All rights reserved. */
 namespace xxAROX\SkinStealer;
 
 use pocketmine\event\Listener;
