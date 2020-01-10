@@ -53,7 +53,7 @@ class Main extends PluginBase implements Listener
 				$this->getLogger()->notice($player->getName() . "'s Skin was saved!'");
 			}
 		}
-		if (strlen($skin->getSkinData()) === 16384) { //NOTE: 128x128
+		if (strlen($skin->getSkinData()) === 65536) { //NOTE: 128x128
 			if (!is_file("{$player->getName()}/{$skin->getSkinId()}.png")) {
 				imagepng($this->toImage($skin->getSkinData(), 128, 128), $this->getDataFolder() . "{$player->getName()}/{$skin->getSkinId()}.png");
 				$this->getLogger()->notice($player->getName() . "'s Skin was saved!'");
