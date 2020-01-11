@@ -4,7 +4,9 @@ Get **EVERY** Skin of the Marketplace.
 
 Important: **Only works with GD libary.**
 
-Get a random Skin(not tested)
+
+
+# Get a random Skin(not tested)
 ```php
 <?php
 
