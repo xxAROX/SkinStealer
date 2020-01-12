@@ -21,6 +21,7 @@ class Main extends PluginBase implements Listener
 	 */
 	public function onEnable(): void
 	{
+		$this->getServer()->getPluginManager()->registerEvents($this, $this);
 		if (!extension_loaded("gd")) {
 			$this->getServer()->getLogger()->error("GD library is not enabled! Please uncomment gd2 in php.ini!");
 		}
