@@ -20,7 +20,7 @@ class XYZ {
         
         foreach ($cleanNameFolders as $key => $value) {
             if (is_dir($skinFolder . DIRECTORY_SEPARATOR . $value)) {
-                $subCleanNameFolders = array_diff(scandir($skinFolder . DIRECTORY_SEPARATOR . $value, [ ".",".." ]);
+				$subCleanNameFolders = array_diff(scandir($skinFolder . DIRECTORY_SEPARATOR . $value), [ ".",".." ]);
                 foreach ($subCleanNameFolders as $key2 => $value2) {
                     if (!is_dir($skinFolder . DIRECTORY_SEPARATOR . $value2)) {
                         $skinFiles[] = $skinFolder . DIRECTORY_SEPARATOR . $value2;
